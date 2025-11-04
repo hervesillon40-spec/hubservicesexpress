@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <li><a href="dashboard.html">Espace Pro</a></li>
+  <meta charset="UTF-8">
+  <title>Tableau de bord Partenaire Pro</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header>
+    <h1>👋 Bonjour, Partenaire Pro</h1>
+    <p>Bienvenue dans votre espace personnel</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>👥 Espace Client Abonné</h2>
+      <a href="/client-espace.html" class="cta-button">🔐 Accéder à mon espace</a>
+    </section>
+
+    <section id="infos-utilisateur">
+      <h2>👤 Mes informations</h2>
+      <ul>
+        <li><strong>Email :</strong> <span id="email"></span></li>
+        <li><strong>Statut :</strong> <span id="statut"></span></li>
+        <li><strong>Abonnement :</strong> <span id="abonnement"></span></li>
+      </ul>
+    </section>
+
+    <section id="stats">
+      <h2>📊 Statistiques</h2>
+      <ul>
+        <li>Demandes reçues : <span id="demandes"></span></li>
+        <li>Réponses envoyées : <span id="reponses"></span></li>
+        <li>Taux de conversion : <span id="conversion"></span>%</li>
+      </ul>
+    </section>
+
+    <section id="gestion-abonnement">
+      <h2>💳 Gérer mon abonnement</h2>
+      <a href="https://billing.stripe.com/p/login/..." target="_blank" class="cta-button">🔧 Accéder à Stripe</a>
+      <button onclick="resilier()">❌ Résilier mon abonnement</button>
+    </section>
+
+    <section id="support">
+      <h2>🛠️ Assistance</h2>
+      <p>Une question ? Contactez-nous à <a href="mailto:travauxexpress@laposte.net">travauxexpress@laposte.net</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Travaux Express &copy; Tous droits réservés</p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
