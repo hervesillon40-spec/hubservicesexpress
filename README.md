@@ -1,1 +1,1 @@
-Tâches Express, c’est la solution simple et rapide pour trouver un professionnel du bâtiment près de chez vous. Notre mission : faciliter la mise en relation entre particuliers et artisans qualifiés, en toute transparence.
+Tâches Express, c’est la solution simple et rapide pour trouver un professionnel près de chez vous. Notre mission : faciliter la mise en relation entre particuliers et pros qualifiés, en toute transparence.
