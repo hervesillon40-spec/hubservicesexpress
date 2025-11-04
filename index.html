@@ -14,32 +14,35 @@
 <body>
 
   <header>
-  <h1>Travaux Express</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="dashboard.html">Espace Pro</a></li>
-      <li><a href="mentions-legales.html">Mentions légales</a></li>
-      <li><a href="confidentialite.html">Confidentialité</a></li>
-      <li><a href="cgu.html">CGU</a></li>
-    </ul>
-  </nav>
-</header>
+    <h1>Travaux Express</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="dashboard.html">Espace Pro</a></li>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
+        <li><a href="confidentialite.html">Confidentialité</a></li>
+        <li><a href="cgu.html">CGU</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
     <section>
-      <h2>Services supplémentaires</h2>
-      <a href="https://buy.stripe.com/aFa14p9im88fgnH5zW5wI00" class="cta-button" target="_blank" rel="noopener noreferrer">💳 Paiement sécurisé pour abo mensuel client</a>
-      <a href="https://buy.stripe.com/9B600l3Y2gELdbvaUg5wI01" class="cta-button" target="_blank" rel="noopener noreferrer">💳 Paiement sécurisé pour abo annuel client</a>
-      <a href="mailto:travauxexpress@laposte.net" class="cta-button">📧 Contactez-nous</a>
-      <h3>📋 Suivi de demande</h3>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSegfTLhi24IMfV5lqMtcHNspSe8FJ3wpOb9K78ozsODmT-ouQ/viewform?usp=preview" target="_blank" rel="noopener noreferrer">🔍 Accéder au formulaire de suivi</a>
+      <h2>🛠️ Services supplémentaires</h2>
+      <ul>
+        <li><a href="https://buy.stripe.com/aFa14p9im88fgnH5zW5wI00" class="cta-button" target="_blank" rel="noopener noreferrer">💳 Paiement mensuel client</a></li>
+        <li><a href="https://buy.stripe.com/9B600l3Y2gELdbvaUg5wI01" class="cta-button" target="_blank" rel="noopener noreferrer">💳 Paiement annuel client</a></li>
+        <li><a href="mailto:travauxexpress@laposte.net" class="cta-button">📧 Contactez-nous</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSegfTLhi24IMfV5lqMtcHNspSe8FJ3wpOb9K78ozsODmT-ouQ/viewform?usp=preview" target="_blank" rel="noopener noreferrer">🔍 Suivi de demande</a></li>
+      </ul>
     </section>
 
     <section>
       <h2>💼 Abonnement Partenaire Pro</h2>
-      <a href="https://buy.stripe.com/4gMcN73Y2bkr5J3aUg5wI03" class="cta-button" target="_blank" rel="noopener noreferrer">💳 Paiement sécurisé pour abo mensuel entreprise</a>
-      <a href="https://buy.stripe.com/14A7sN7aefAH4EZaUg5wI04" class="cta-button" target="_blank" rel="noopener noreferrer">💳 Paiement sécurisé pour abo annuel entreprise</a>
+      <ul>
+        <li><a href="https://buy.stripe.com/4gMcN73Y2bkr5J3aUg5wI03" class="cta-button" target="_blank" rel="noopener noreferrer">💳 Paiement mensuel entreprise</a></li>
+        <li><a href="https://buy.stripe.com/14A7sN7aefAH4EZaUg5wI04" class="cta-button" target="_blank" rel="noopener noreferrer">💳 Paiement annuel entreprise</a></li>
+      </ul>
       <ul>
         <li>Réponses illimitées aux demandes</li>
         <li>Visibilité prioritaire</li>
@@ -91,33 +94,32 @@
   </main>
 
   <footer>
-  <div id="clock"></div>
-  <p>
-    <a href="mentions-legales.html">Mentions légales</a> |
-    <a href="confidentialite.html">Politique de confidentialité</a> |
-    <a href="cgu.html">CGU</a>
-  </p>
-  <p>Travaux Express &copy; Tous droits réservés</p>
-</footer>
-<script>
-  function updateClock() {
-    const now = new Date();
-    const options = {
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit',
-      weekday: 'long',
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric'
-    };
-    const formattedTime = now.toLocaleString('fr-FR', options);
-    document.getElementById('clock').textContent = formattedTime;
-  }
+    <div id="clock" aria-live="polite"></div>
+    <p>
+      <a href="mentions-legales.html">Mentions légales</a> |
+      <a href="confidentialite.html">Politique de confidentialité</a> |
+      <a href="cgu.html">CGU</a>
+    </p>
+    <p>Travaux Express &copy; Tous droits réservés</p>
+  </footer>
 
-  updateClock(); // affichage initial
-  setInterval(updateClock, 1000); // mise à jour chaque seconde
-</script>
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const options = {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        weekday: 'long',
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric'
+      };
+      const formattedTime = now.toLocaleString('fr-FR', options);
+      document.getElementById('clock').textContent = formattedTime;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
 </body>
-</html>
-
