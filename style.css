@@ -63,11 +63,38 @@ nav a:hover {
 .cta-button:hover {
   background-color: #e0a800;
   color: #fff;
+  animation: pulse 0.3s ease-in-out;
+}
+
+/* ✨ Animation au survol */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ✨ Animation d’apparition */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* 📦 Sections */
 section {
   margin: 40px 0;
+  animation: fadeUp 0.8s ease-out;
 }
 
 section h2 {
