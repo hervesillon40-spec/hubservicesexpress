@@ -4,59 +4,71 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hub Services Express</title>
+  
+  <!-- 🔍 SEO -->
+  <meta name="description" content="Hub Services Express - mise en relation entre particuliers et artisans qualifiés. Paiement sécurisé, simplicité et transparence.">
+  <meta name="keywords" content="services, artisans, particuliers, plateforme, paiement sécurisé, France">
+  
+  <!-- 📱 Réseaux sociaux (Open Graph) -->
+  <meta property="og:title" content="Hub Services Express">
+  <meta property="og:description" content="Facilitez vos demandes de services avec des artisans qualifiés.">
+  <meta property="og:image" content="logo-services.png.jpg">
+  <meta property="og:url" content="https://tonsite.com">
+
+  <!-- 🎨 Styles -->
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
 
   <!-- 🧭 En-tête -->
-  <header class="site-header">
+  <header class="site-header" role="banner">
     <div class="branding">
       <img src="logo-services.png.jpg" alt="Logo Hub Services Express" class="logo" />
       <h1>Hub Services Express</h1>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav" role="navigation">
       <ul>
         <li><a href="#accueil">Accueil</a></li>
         <li><a href="#espace-pro">Espace Pro</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#mentions-legales">Mentions légales</a></li>
         <li><a href="#confidentialite">Confidentialité</a></li>
         <li><a href="#cgu">CGU</a></li>
-        <li><a href="#services">🛠️ Services</a></li>
-        <li><a href="https://buy.stripe.com/aFadRbgKOcov0oJ0fC5wI05" class="cta-button" target="_blank">💳 Paiement mensuel client</a></li>
-        <li><a href="https://buy.stripe.com/7sYbJ35260FNfjD7I45wI06" class="cta-button" target="_blank">💳 Paiement annuel client</a></li>
         <li><a href="mailto:hubservices@laposte.net">📧 Contact</a></li>
-        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScJD_UHAPCwfpRRwuSXnC4j6vqSgmEQgha0Um3y6JpYrVKwTg/viewform?usp=publish-editor">🔍 Demande Client</a></li>
-        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe3d7GQFR9lxylICu0cL0SX2udqM5Jjk0dNe2bmJ1UtNicJEQ/viewform?usp=publish-editor">🔍 Demande Prestataire</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScJD_UHAPCwfpRRwuSXnC4j6vqSgmEQgha0Um3y6JpYrVKwTg/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">🔍 Demande Client</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe3d7GQFR9lxylICu0cL0SX2udqM5Jjk0dNe2bmJ1UtNicJEQ/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">🔍 Demande Prestataire</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main role="main">
     <!-- 📘 À propos -->
     <section id="accueil" class="section">
       <h2>📘 À propos</h2>
       <p>Hub Services Express facilite la mise en relation entre particuliers et artisans qualifiés. Notre mission : simplicité, transparence et qualité. Nous accompagnons chaque étape : publication, réponse, paiement sécurisé, suivi.</p>
     </section>
 
-    <!-- 🧑‍🔧 Témoignages & Réalisations -->
+    <!-- 🧑‍🔧 Témoignages -->
     <section id="temoignages" class="section">
       <h2>🧑‍🔧 Témoignages & Réalisations</h2>
       <div class="temoignages">
         <blockquote>
-          <p>« Artisan ponctuel et travail impeccable. Plateforme Hub Services Express simple et efficace. »</p>
+          <p>« Artisan ponctuel et travail impeccable. Plateforme simple et efficace. »</p>
           <footer>— Sophie M., Paris</footer>
         </blockquote>
         <blockquote>
-          <p>« J’ai trouvé un plombier en moins de 24h via Hub Services Express. Paiement sécurisé et suivi clair. »</p>
+          <p>« J’ai trouvé un plombier en moins de 24h. Paiement sécurisé et suivi clair. »</p>
           <footer>— Karim B., Lyon</footer>
         </blockquote>
         <blockquote>
-          <p>« Service client réactif, artisans qualifiés. Je recommande vivement Hub Services Express. »</p>
+          <p>« Service client réactif, artisans qualifiés. Je recommande vivement. »</p>
           <footer>— Julie R., Marseille</footer>
         </blockquote>
       </div>
       <div class="galerie-pro">
-        <img src="https://picsum.photos/800/400" alt="Artisans professionnels en intervention via Hub Services Express" />
+        <img src="https://picsum.photos/800/400" alt="Artisans en intervention" loading="lazy" />
       </div>
     </section>
 
@@ -64,8 +76,8 @@
     <section id="espace-pro" class="section">
       <h2>💼 Abonnement Partenaire Pro</h2>
       <ul class="payment-links">
-        <li><a href="https://buy.stripe.com/4gMcN73Y2bkr5J3aUg5wI03" class="cta-button" target="_blank">💳 Paiement mensuel entreprise</a></li>
-        <li><a href="https://buy.stripe.com/14A7sN7aefAH4EZaUg5wI04" class="cta-button" target="_blank">💳 Paiement annuel entreprise</a></li>
+        <li><a href="https://buy.stripe.com/4gMcN73Y2bkr5J3aUg5wI03" class="cta-button" target="_blank" rel="noopener noreferrer">💳 Paiement mensuel entreprise</a></li>
+        <li><a href="https://buy.stripe.com/14A7sN7aefAH4EZaUg5wI04" class="cta-button" target="_blank" rel="noopener noreferrer">💳 Paiement annuel entreprise</a></li>
       </ul>
       <ul class="benefits">
         <li>Réponses illimitées</li>
@@ -81,17 +93,6 @@
     <section id="services" class="section">
       <h2>🛠️ Services supplémentaires</h2>
       <p>Améliorez votre visibilité ou obtenez des réponses plus rapides grâce à nos options avancées.</p>
-    </section>
-
-    <!-- 💳 Paiement client -->
-    <section id="paiement-client-mensuel" class="section">
-      <h2>💳 Paiement mensuel client</h2>
-      <p>Abonnement mensuel avec paiement sécurisé via Stripe.</p>
-    </section>
-
-    <section id="paiement-client-annuel" class="section">
-      <h2>💳 Paiement annuel client</h2>
-      <p>Formule annuelle avantageuse avec paiement sécurisé via Stripe.</p>
     </section>
 
     <!-- 📜 CGU -->
@@ -129,7 +130,7 @@
     </section>
 
     <!-- ❓ FAQ -->
-    <section class="section">
+    <section id="faq" class="section">
       <h2>❓ FAQ</h2>
       <ul>
         <li><strong>Comment publier une demande ?</strong> Créez un compte client et remplissez le formulaire.</li>
@@ -139,11 +140,11 @@
   </main>
 
   <!-- 🔗 Footer -->
-  <footer>
+  <footer role="contentinfo">
     <p>Hub Services Express 2025 © Tous droits réservés</p>
     <div class="social-links">
-      <p>Suivez-nous sur les réseaux :</p>
-      <a href="https://fr.linkedin.com/posts/herv%C3%A9-sillon-072426396_hub-services-express-est-d%C3%A9sormais-en-activity-7396865302086705152-yxgR" target="_blank">
+      <p>Suivez-nous :</p>
+      <a href="https://fr.linkedin.com/posts/herv%C3%A9-sillon-072426396_hub-services-express-est-d%C3%A9sormais-en-activity-7396865302086705152-yxgR" target="_blank" rel="noopener noreferrer">
         <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="40" />
       </a>
     </div>
