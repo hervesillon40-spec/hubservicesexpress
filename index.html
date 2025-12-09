@@ -4,267 +4,161 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Hub Services Express - Mise en relation entre particuliers et artisans</title>
-  <meta name="description" content="Plateforme de mise en relation entre particuliers et artisans qualifiés. Paiement sécurisé, réactivité et transparence.">
-  <meta name="keywords" content="artisan, service, travaux, plateforme, devis, plomberie, électricité, rénovation, France">
+  <!-- 🔍 SEO -->
+  <title>Hub Services Express - Mise en relation entre particuliers et artisans qualifiés</title>
+  <meta name="description" content="Hub Services Express - mise en relation entre particuliers et artisans qualifiés. Paiement sécurisé, simplicité et transparence.">
+  <meta name="keywords" content="services, artisans, particuliers, plateforme, paiement sécurisé, France">
 
-  <!-- Open Graph -->
+  <!-- 📱 Réseaux sociaux (Open Graph) -->
   <meta property="og:title" content="Hub Services Express">
-  <meta property="og:description" content="Trouvez des artisans qualifiés rapidement et en toute sécurité.">
+  <meta property="og:description" content="Facilitez vos demandes de services avec des artisans qualifiés.">
   <meta property="og:image" content="logo-services.png.jpg">
-  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tonsite.com">
 
-  <!-- Styles -->
-  <style>
-    /* ---------------------------
-       RESET + BASE
-    ----------------------------*/
-    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-    body {
-      font-family: Arial, sans-serif;
-      background:#f9f9f9;
-      color:#333;
-      line-height:1.6;
-      scroll-behavior:smooth;
-    }
-    img { max-width:100%; height:auto; }
-
-    /* ---------------------------
-       HEADER
-    ----------------------------*/
-    header {
-      background:white;
-      padding:20px;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      border-bottom:1px solid #ddd;
-      position:sticky;
-      top:0;
-      z-index:1000;
-    }
-    header .branding { display:flex; align-items:center; }
-    header .logo { width:60px; margin-right:15px; }
-
-    nav ul {
-      list-style:none;
-      display:flex;
-      gap:15px;
-    }
-    nav a {
-      text-decoration:none;
-      font-weight:bold;
-      color:#0077b5;
-    }
-    nav a:hover { color:#005f8c; }
-
-    /* ---------------------------
-       SECTION
-    ----------------------------*/
-    .section {
-      padding:60px 20px;
-      background:white;
-      margin:20px auto;
-      border-radius:10px;
-      width:90%;
-      max-width:1000px;
-      box-shadow:0 4px 10px rgba(0,0,0,0.05);
-      animation:fadeIn 0.6s ease;
-    }
-
-    @keyframes fadeIn {
-      from { opacity:0; transform:translateY(15px); }
-      to { opacity:1; transform:translateY(0); }
-    }
-
-    h2 {
-      margin-bottom:20px;
-      color:#0077b5;
-    }
-
-    .retour-accueil {
-      margin-top:25px;
-      text-align:right;
-    }
-    .retour-accueil a {
-      text-decoration:none;
-      color:#ff8800;
-      font-weight:bold;
-    }
-
-    /* ---------------------------
-       CTA buttons
-    ----------------------------*/
-    .cta-button {
-      display:inline-block;
-      background:#ff8800;
-      color:white;
-      padding:10px 20px;
-      border-radius:5px;
-      margin:5px 0;
-      text-decoration:none;
-      font-weight:bold;
-      transition:0.2s;
-    }
-    .cta-button:hover {
-      background:#e67300;
-    }
-
-    /* ---------------------------
-       FOOTER
-    ----------------------------*/
-    footer {
-      text-align:center;
-      padding:25px;
-      background:#f1f1f1;
-      margin-top:40px;
-    }
-
-    .cta-linkedin {
-      display:inline-block;
-      background:#0077b5;
-      padding:10px 20px;
-      color:white;
-      text-decoration:none;
-      border-radius:6px;
-      font-weight:bold;
-    }
-
-    /* ---------------------------
-       BOUTON FLOTANT REMONTER
-    ----------------------------*/
-    #toTop {
-      position:fixed;
-      bottom:25px;
-      right:25px;
-      background:#0077b5;
-      color:white;
-      padding:14px 17px;
-      border-radius:50%;
-      font-size:22px;
-      cursor:pointer;
-      display:none;
-      box-shadow:0 4px 10px rgba(0,0,0,0.3);
-      transition:0.2s;
-    }
-    #toTop:hover {
-      background:#005f8c;
-    }
-
-  </style>
-
+  <!-- 🎨 Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
 
-<header>
-  <div class="branding">
-    <img src="logo-services.png.jpg" class="logo" alt="Logo Hub Services Express">
-    <h1>Hub Services Express</h1>
-  </div>
+  <!-- 🧭 En-tête -->
+  <header class="site-header" role="banner">
+    <div class="branding">
+      <img src="logo-services.png.jpg" alt="Logo Hub Services Express" class="logo" />
+      <h1>Hub Services Express</h1>
+    </div>
+    <nav class="main-nav" role="navigation">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#espace-pro">Espace Pro</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#mentions-legales">Mentions légales</a></li>
+        <li><a href="#confidentialite">Confidentialité</a></li>
+        <li><a href="#cgu">CGU</a></li>
+        <li><a href="mailto:hubservices@laposte.net">📧 Contact</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScJD_UHAPCwfpRRwuSXnC4j6vqSgmEQgha0Um3y6JpYrVKwTg/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">🔍 Demande Client</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe3d7GQFR9lxylICu0cL0SX2udqM5Jjk0dNe2bmJ1UtNicJEQ/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">🔍 Demande Prestataire</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <nav>
-    <ul>
-      <li><a href="#accueil">Accueil</a></li>
-      <li><a href="#espace-pro">Espace Pro</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#mentions-legales">Mentions légales</a></li>
-      <li><a href="#confidentialite">Confidentialité</a></li>
-      <li><a href="#cgu">CGU</a></li>
-    </ul>
-  </nav>
-</header>
+  <main role="main">
+    <!-- 📘 À propos -->
+    <section id="accueil" class="section">
+      <h2>📘 À propos</h2>
+      <p>
+        Hub Services Express facilite la mise en relation entre particuliers et artisans qualifiés. 
+        Notre mission : simplicité, transparence et qualité. 
+        Nous accompagnons chaque étape : publication, réponse, paiement sécurisé, suivi.
+      </p>
+      <p class="slogan">
+        🌟 Hub Services Express, c’est la connexion simple entre particuliers, artisans, entreprises, 
+        en B2B comme en B2C, C2C, pour tous types de travaux, services et tâches diverses : 
+        plomberie, rénovation, électricité, agriculture, immobilier, mécanique, entretien…
+      </p>
+    </section>
 
-<main>
+    <!-- 🧑‍🔧 Témoignages -->
+    <section id="temoignages" class="section">
+      <h2>🧑‍🔧 Témoignages & Réalisations</h2>
+      <div class="temoignages">
+        <blockquote>
+          <p>« Artisan ponctuel et travail impeccable. Plateforme simple et efficace. »</p>
+          <footer>— Sophie M., Paris</footer>
+        </blockquote>
+        <blockquote>
+          <p>« J’ai trouvé un plombier en moins de 24h. Paiement sécurisé et suivi clair. »</p>
+          <footer>— Karim B., Lyon</footer>
+        </blockquote>
+        <blockquote>
+          <p>« Service client réactif, artisans qualifiés. Je recommande vivement. »</p>
+          <footer>— Julie R., Marseille</footer>
+        </blockquote>
+      </div>
+      <div class="galerie-pro">
+        <img src="https://picsum.photos/800/400" alt="Artisans en intervention" loading="lazy" />
+      </div>
+    </section>
 
-<!-- ACCUEIL -->
-<section id="accueil" class="section">
-  <h2>📘 À propos</h2>
-  <p>Hub Services Express facilite la mise en relation entre particuliers et artisans qualifiés.</p>
-  <p class="slogan">⭐ Plateforme rapide, fiable et sécurisée.</p>
-  <p class="retour-accueil"><a href="#accueil">⬅ Retour à l’accueil</a></p>
-</section>
+    <!-- 💼 Abonnement Pro -->
+    <section id="espace-pro" class="section">
+      <h2>💼 Abonnement Partenaire Pro</h2>
+      <ul class="payment-links">
+        <li><a href="https://buy.stripe.com/4gMcN73Y2bkr5J3aUg5wI03" class="cta-button" target="_blank" rel="noopener noreferrer">💳 Paiement mensuel entreprise</a></li>
+        <li><a href="https://buy.stripe.com/14A7sN7aefAH4EZaUg5wI04" class="cta-button" target="_blank" rel="noopener noreferrer">💳 Paiement annuel entreprise</a></li>
+      </ul>
+      <ul class="benefits">
+        <li>Réponses illimitées</li>
+        <li>Visibilité prioritaire</li>
+        <li>Statistiques de performance</li>
+        <li>Assistance dédiée</li>
+      </ul>
+      <p><strong>Tarif :</strong> 25,00 € / mois</p>
+      <p><em>Sans engagement, résiliable à tout moment</em></p>
+    </section>
+    <li><a href="https://buy.stripe.com/aFadRbgKOcov0oJ0fC5wI05" class="cta-button" target="_blank" rel="noopener noreferrer">💳 Paiement mensuel particulier</a></li>
+    <li><a href="https://buy.stripe.com/7sYbJ35260FNfjD7I45wI06" class="cta-button" target="_blank" rel="noopener noreferrer">💳 Paiement annuel particulier</a></li>
 
-<!-- TEMOIGNAGES -->
-<section id="temoignages" class="section">
-  <h2>🧑‍🔧 Témoignages</h2>
-  <blockquote>« Service au top ! » — Sophie</blockquote>
-  <blockquote>« Artisan trouvé en 24h » — Karim</blockquote>
-  <div class="galerie-pro">
-    <img src="https://picsum.photos/900/400" alt="Artisan">
-  </div>
-  <p class="retour-accueil"><a href="#accueil">⬅ Retour à l’accueil</a></p>
-</section>
+    <!-- 🛠️ Services -->
+    <section id="services" class="section">
+      <h2>🛠️ Services supplémentaires</h2>
+      <p>Améliorez votre visibilité ou obtenez des réponses plus rapides grâce à nos options avancées.</p>
+    </section>
 
-<!-- PRO -->
-<section id="espace-pro" class="section">
-  <h2>💼 Espace Pro</h2>
-  <a href="#" class="cta-button">Paiement mensuel entreprise</a><br>
-  <a href="#" class="cta-button">Paiement annuel entreprise</a>
-  <p class="retour-accueil"><a href="#accueil">⬅ Retour à l’accueil</a></p>
-</section>
+    <!-- 📜 CGU -->
+    <section id="cgu" class="section">
+      <h2>📜 Conditions d’utilisation</h2>
+      <ul>
+        <li>Publication libre des demandes</li>
+        <li>Réponses via forfait ou abonnement</li>
+        <li>Échanges professionnels et respectueux</li>
+        <li>Aucune garantie sur la réalisation</li>
+        <li>Fraude = exclusion</li>
+      </ul>
+    </section>
 
-<!-- SERVICES -->
-<section id="services" class="section">
-  <h2>🛠️ Services</h2>
-  <p>Améliorez votre visibilité grâce à nos options professionnelles.</p>
-  <p class="retour-accueil"><a href="#accueil">⬅ Retour à l’accueil</a></p>
-</section>
+    <!-- 🔐 Confidentialité -->
+    <section id="confidentialite" class="section">
+      <h2>🔐 Politique de confidentialité</h2>
+      <ul>
+        <li>Utilisation des données uniquement pour l’application</li>
+        <li>Aucune revente de données</li>
+        <li>Suppression du compte possible</li>
+        <li>Paiements sécurisés via Stripe ou PayPal</li>
+      </ul>
+    </section>
 
-<!-- FAQ -->
-<section id="faq" class="section">
-  <h2>❓ FAQ</h2>
-  <ul>
-    <li>Comment publier ? → Formulaire client</li>
-    <li>Qui peut répondre ? → Partenaires</li>
-  </ul>
-  <p class="retour-accueil"><a href="#accueil">⬅ Retour à l’accueil</a></p>
-</section>
+    <!-- 📄 Mentions légales -->
+    <section id="mentions-legales" class="section">
+      <h2>📄 Mentions légales</h2>
+      <address>
+        Hub Services Express, boulevard Stalingrad, 94400 Vitry-sur-Seine, France<br>
+        SIRET : 827 866 781 00012<br>
+        Directeur de publication : Hervé Sillon<br>
+        Hébergeur : GitHub, Inc., San Francisco, CA, États-Unis
+      </address>
+    </section>
 
-<!-- CONFIDENTIALITÉ -->
-<section id="confidentialite" class="section">
-  <h2>🔐 Confidentialité</h2>
-  <p>Respect total de vos données, aucune revente.</p>
-  <p class="retour-accueil"><a href="#accueil">⬅ Retour à l’accueil</a></p>
-</section>
+    <!-- ❓ FAQ -->
+    <section id="faq" class="section">
+      <h2>❓ FAQ</h2>
+      <ul>
+        <li><strong>Comment publier une demande ?</strong> Créez un compte client et remplissez le formulaire.</li>
+        <li><strong>Qui peut répondre ?</strong> Les partenaires inscrits et payants.</li>
+      </ul>
+    </section>
+  </main>
 
-<!-- MENTIONS -->
-<section id="mentions-legales" class="section">
-  <h2>📄 Mentions légales</h2>
-  <p>SIRET : 827 866 781 00012</p>
-  <p class="retour-accueil"><a href="#accueil">⬅ Retour à l’accueil</a></p>
-</section>
-
-<!-- CGU -->
-<section id="cgu" class="section">
-  <h2>📜 CGU</h2>
-  <p>Aucune garantie sur la réalisation - respect obligatoire.</p>
-  <p class="retour-accueil"><a href="#accueil">⬅ Retour à l’accueil</a></p>
-</section>
-
-</main>
-
-<footer>
-  <p>Hub Services Express © 2025</p>
-  <a href="#" class="cta-linkedin">LinkedIn</a>
+<!-- 🔗 Footer -->
+<footer role="contentinfo" style="background-color:#f5f5f5; padding:20px; text-align:center;">
+  <p>Hub Services Express © 2025 - Tous droits réservés</p>
+  <a href="https://www.linkedin.com/in/hervé-sillon-072426396" target="_blank" rel="noopener noreferrer" 
+     style="display:inline-block; background-color:#0077b5; color:#fff; padding:10px 20px; 
+            border-radius:4px; text-decoration:none; font-weight:bold; font-family:sans-serif;">
+    🔗 LinkedIn
+  </a>
 </footer>
 
-<!-- Bouton flottant -->
-<div id="toTop">⬆</div>
 
-<!-- Script pour bouton remontée -->
-<script>
-  const toTop = document.getElementById("toTop");
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) { toTop.style.display = "block"; }
-    else { toTop.style.display = "none"; }
-  });
-
-  toTop.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-</script>
-
-</body>
-</html>
